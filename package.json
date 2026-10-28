@@ -2,7 +2,7 @@
   "name": "design-workbench",
   "version": "0.1.0",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "SEE LICENSE IN LICENSE",
   "type": "module",
   "scripts": {
     "dev": "bun run scripts/dev.ts",
