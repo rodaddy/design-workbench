@@ -1,0 +1,36 @@
+{
+  "status": "provisional",
+  "source": "video transcript and supplied extracted frames",
+  "documents": [
+    {
+      "document": "taste-board/categories/video-seeds/print-tech-paper.md",
+      "evidence": [
+        "captures/taste-board/batch-001/video-seeds/frame_0158.jpg"
+      ]
+    },
+    {
+      "document": "taste-board/categories/video-seeds/dither-mono.md",
+      "evidence": [
+        "captures/taste-board/batch-001/video-seeds/frame_0152.jpg"
+      ]
+    },
+    {
+      "document": "taste-board/categories/video-seeds/vast-quiet-cinematic.md",
+      "evidence": [
+        "captures/taste-board/batch-001/video-seeds/frame_0159.jpg"
+      ]
+    },
+    {
+      "document": "taste-board/categories/video-seeds/classical-remix.md",
+      "evidence": [
+        "captures/taste-board/batch-001/video-seeds/frame_0161.jpg"
+      ]
+    },
+    {
+      "document": "taste-board/categories/video-seeds/stillness-example.md",
+      "evidence": [
+        "captures/taste-board/batch-001/video-seeds/frame_0028.jpg"
+      ]
+    }
+  ]
+}

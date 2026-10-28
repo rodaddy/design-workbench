@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "variantId": "comparison/signal-paper/taste",
+  "controls": [
+    {
+      "id": "accent",
+      "label": "Accent",
+      "property": "--fixture-accent",
+      "type": "color",
+      "default": "#176b57"
+    }
+  ]
+}

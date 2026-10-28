@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adversarial variant fixture</title>
+  </head>
+  <body>
+    <h1>Adversarial isolation fixture</h1>
+    <form
+      id="trusted-form"
+      action="http://127.0.0.1:4173/api/comparisons"
+      method="post"
+      target="_top"
+    >
+      <input name="attack" value="form-submit" />
+      <button type="submit">Attempt trusted form submission</button>
+    </form>
+    <script>
+      const attempts = {
+        parentAccess: () => window.parent.document.cookie,
+        trustedApiFetch: () => fetch("http://127.0.0.1:4173/api/comparisons"),
+        outboundFetch: () => fetch("https://example.com/variant-exfiltration"),
+        formSubmit: () =>
+          document.querySelector("#trusted-form").requestSubmit(),
+        topNavigation: () =>
+          window.top.location.assign("https://example.com/top-navigation"),
+      };
+
+      for (const [name, attempt] of Object.entries(attempts)) {
+        try {
+          Promise.resolve(attempt()).then(
+            () => (document.body.dataset[name] = "unexpected-success"),
+            () => (document.body.dataset[name] = "blocked"),
+          );
+        } catch {
+          document.body.dataset[name] = "blocked";
+        }
+      }
+    </script>
+  </body>
+</html>

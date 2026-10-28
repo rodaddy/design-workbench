@@ -1,0 +1,41 @@
+[
+  {
+    "original_url": "https://www.adhamdannaway.com/",
+    "resolved_url": "https://www.adhamdannaway.com/",
+    "entry_path": "taste-board/inbox/batch-001/direct-sites/adham-dannaway.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/direct-sites/adham-dannaway/og-image.jpg"
+    ],
+    "capture_type": "blocked",
+    "status": "blocked",
+    "limitation": "The required chrome-agent named browser could not create its local profile because of EPERM on the normal attempt and one retry, so rendered DOM, page screenshots, interaction, and live network evidence were unavailable. Public read-only metadata retrieval succeeded and supplied the current Open Graph image; no direct motion media was exposed."
+  },
+  {
+    "original_url": "https://forai.design/?ref=killerportfolio",
+    "resolved_url": "https://forai.design/?ref=killerportfolio",
+    "entry_path": "taste-board/inbox/batch-001/direct-sites/forai-design.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/direct-sites/forai-design/page.html",
+      "captures/taste-board/batch-001/direct-sites/forai-design/response-headers.txt",
+      "captures/taste-board/batch-001/direct-sites/forai-design/motion-frame-00s.jpg",
+      "captures/taste-board/batch-001/direct-sites/forai-design/motion-frame-05s.jpg",
+      "captures/taste-board/batch-001/direct-sites/forai-design/motion-frame-07s.jpg"
+    ],
+    "capture_type": "mixed",
+    "status": "partial",
+    "limitation": "The required chrome-agent named browser could not create its local profile because of EPERM on the normal attempt and one retry, so no rendered full-page screenshot, interaction pass, or complete browser network timeline was available. Public metadata and HTML exposed direct MP4 media; one representative asset was analyzed and three frames were promoted."
+  },
+  {
+    "original_url": "https://www.withhoney.com/?ref=killerportfolio",
+    "resolved_url": "https://www.withhoney.com/?ref=killerportfolio",
+    "entry_path": "taste-board/inbox/batch-001/direct-sites/withhoney.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/direct-sites/withhoney/motion-frame-00s.jpg",
+      "captures/taste-board/batch-001/direct-sites/withhoney/motion-frame-05s.jpg",
+      "captures/taste-board/batch-001/direct-sites/withhoney/motion-frame-09s.jpg"
+    ],
+    "capture_type": "motion",
+    "status": "partial",
+    "limitation": "The required chrome-agent named browser could not create its local profile because of EPERM on the normal attempt and one retry, so no rendered full-page screenshot, interaction pass, or browser network timeline was available. Public metadata exposed direct WebM and GIF media; one representative WebM was analyzed and three frames were promoted."
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "title": "Fixture Proof Set",
+  "directions": [
+    {
+      "slug": "index-nocturne",
+      "title": "Index Nocturne",
+      "engines": ["impeccable", "taste"]
+    },
+    {
+      "slug": "signal-paper",
+      "title": "Signal Paper",
+      "engines": ["impeccable", "taste"]
+    }
+  ]
+}

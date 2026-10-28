@@ -1,0 +1,475 @@
+/*
+Design Workbench — Studio Console (dark, compact).
+Global tokens, application shell, and shared control primitives.
+The old "Optical Proofing Bench" editorial world (light paper, 5.5rem display
+headings, tall mastheads, large section whitespace) is removed; see DESIGN.md.
+*/
+
+:root {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --bg: #0e0f11;
+  --panel: #16181c;
+  --panel-raised: #1d2024;
+  --panel-inset: #111316;
+  --selected: #232833;
+
+  /* Lines */
+  --line: #2a2e34;
+  --line-strong: #3a3f47;
+
+  /* Text */
+  --ink: #e7e9ec;
+  --ink-soft: #a6adb6;
+  --ink-faint: #6b7280;
+
+  /* Signal (single warm accent) */
+  --signal: #e0913a;
+  --signal-soft: #c47c2c;
+  --signal-tint: #2a1f12;
+
+  /* Evidence + status */
+  --captured: #5bb98c;
+  --partial: #d9a441;
+  --blocked: #d1656b;
+  --focus: #5aa0e0;
+  --shadow: #00000073;
+  --backdrop: #060709ad;
+
+  /* Metrics */
+  --app-bar-height: 44px;
+  --control-height: 1.9rem;
+  --tab-strip-height: 2.1rem;
+  --gutter: 0.9rem;
+  --measure: 68ch;
+
+  --font-ui: "Inter Tight", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+  font-family: var(--font-body);
+  font-synthesis: none;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 20rem;
+  height: 100%;
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-width: 20rem;
+  min-height: 100%;
+  color: var(--ink);
+  background: var(--bg);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: var(--ink);
+}
+
+button,
+select,
+summary,
+input[type="checkbox"],
+input[type="radio"],
+input[type="file"] {
+  cursor: pointer;
+}
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+a {
+  color: var(--ink);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--signal);
+}
+
+button,
+input,
+select,
+textarea,
+summary,
+a {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+::selection {
+  color: var(--bg);
+  background: var(--signal);
+}
+
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+dl,
+dd,
+pre {
+  margin-top: 0;
+}
+
+/* Compact heading scale — no display mastheads anywhere. */
+h1 {
+  margin-bottom: 0;
+  font-family: var(--font-ui);
+  font-size: 1.15rem;
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  font-weight: 650;
+  letter-spacing: -0.005em;
+}
+
+h3 {
+  margin-bottom: 0.4rem;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 650;
+}
+
+/* Shared metadata kicker (mono label register). */
+.kicker {
+  margin: 0 0 0.25rem;
+  color: var(--ink-faint);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ---- Application shell ---- */
+
+.app-shell {
+  display: grid;
+  grid-template-rows: var(--app-bar-height) minmax(0, 1fr);
+  height: 100dvh;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 100;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.45rem 0.7rem;
+  color: var(--bg);
+  background: var(--signal);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.app-bar {
+  display: flex;
+  align-items: stretch;
+  height: var(--app-bar-height);
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.wordmark {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 var(--gutter);
+  border-right: 1px solid var(--line);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.wordmark::before {
+  width: 0.55rem;
+  height: 0.55rem;
+  background: var(--signal);
+  content: "";
+}
+
+.app-bar nav {
+  display: flex;
+  align-items: stretch;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.app-bar nav::-webkit-scrollbar {
+  display: none;
+}
+
+.app-bar nav a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 0.85rem;
+  border-right: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.app-bar nav a:hover {
+  color: var(--ink);
+  background: var(--panel-raised);
+}
+
+.app-bar nav a[aria-current="page"] {
+  color: var(--signal);
+}
+
+.app-bar nav a[aria-current="page"]::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: var(--signal);
+  content: "";
+}
+
+.system-status {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 0 auto;
+  padding: 0 var(--gutter);
+  border-left: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.system-status [data-indicator] {
+  flex: 0 0 auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--partial);
+}
+
+.system-status [data-indicator="ready"] {
+  background: var(--captured);
+}
+
+.system-status [data-indicator="error"],
+.system-status [data-indicator="degraded"] {
+  background: var(--blocked);
+}
+
+/* The workspace region owns the remaining viewport. */
+.workspace {
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ---- Shared controls ---- */
+
+button {
+  min-height: var(--control-height);
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 3px;
+  color: var(--ink);
+  background: var(--panel-raised);
+  font-size: 0.76rem;
+  font-weight: 550;
+}
+
+button:hover:not(:disabled) {
+  border-color: var(--ink-faint);
+  background: var(--selected);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+/* Primary / signal action. */
+button.primary,
+button[data-variant="primary"] {
+  border-color: var(--signal-soft);
+  background: var(--signal);
+  color: var(--bg);
+  font-weight: 650;
+}
+
+button.primary:hover:not(:disabled),
+button[data-variant="primary"]:hover:not(:disabled) {
+  border-color: var(--signal);
+  background: var(--signal-soft);
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  min-height: var(--control-height);
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 3px;
+  color: var(--ink);
+  background: var(--panel-inset);
+  font-size: 0.78rem;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: var(--ink-faint);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--focus);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--ink-faint);
+  opacity: 1;
+}
+
+textarea {
+  min-height: 5rem;
+  resize: vertical;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  min-height: auto;
+  accent-color: var(--signal);
+}
+
+summary {
+  width: max-content;
+  color: var(--ink);
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+pre {
+  max-width: 100%;
+  margin: 0;
+  padding: 0.7rem;
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  background: var(--panel-inset);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.form-error {
+  margin: 0;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--blocked);
+  color: var(--blocked);
+  background: color-mix(in srgb, var(--blocked) 12%, transparent);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  overflow-wrap: anywhere;
+}
+
+/* System failure (compact, dark; not a 4.5rem headline). */
+.system-failure {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  gap: 0.6rem;
+  height: 100%;
+  padding: var(--gutter) clamp(1rem, 4vw, 3rem);
+  overflow: auto;
+}
+
+.system-failure h1 {
+  font-size: 1.15rem;
+}
+
+.system-failure p {
+  max-width: var(--measure);
+  color: var(--ink-soft);
+}
+
+.system-failure [role="alert"] {
+  color: var(--blocked);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  overflow-wrap: anywhere;
+}
+
+.action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}

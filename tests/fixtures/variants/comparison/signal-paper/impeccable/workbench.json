@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "variantId": "comparison/signal-paper/impeccable",
+  "controls": [
+    {
+      "id": "accent",
+      "label": "Accent",
+      "property": "--fixture-accent",
+      "type": "color",
+      "default": "#f04b24"
+    }
+  ]
+}

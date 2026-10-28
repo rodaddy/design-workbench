@@ -1,0 +1,76 @@
+[
+  {
+    "original_url": "https://dribbble.com/shots/27249429-KaultAI-Landing-Page-Autonomous-AI-Workflow",
+    "resolved_url": "https://dribbble.com/shots/27249429-KaultAI-Landing-Page-Autonomous-AI-Workflow",
+    "entry_path": "taste-board/inbox/batch-001/dribbble/kaultai-autonomous-ai-workflow.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/dribbble/kaultai-autonomous-ai-workflow/page.html",
+      "captures/taste-board/batch-001/dribbble/kaultai-autonomous-ai-workflow/response-headers.txt",
+      "captures/taste-board/batch-001/dribbble/kaultai-autonomous-ai-workflow/embed.html",
+      "captures/taste-board/batch-001/dribbble/kaultai-autonomous-ai-workflow/embed-response-headers.txt",
+      "captures/taste-board/batch-001/dribbble/kaultai-autonomous-ai-workflow/metadata.json",
+      "captures/taste-board/batch-001/dribbble/kaultai-autonomous-ai-workflow/oembed.json",
+      "captures/taste-board/batch-001/dribbble/kaultai-autonomous-ai-workflow/oembed-response-headers.txt",
+      "captures/taste-board/batch-001/dribbble/kaultai-autonomous-ai-workflow/noembed.json",
+      "captures/taste-board/batch-001/dribbble/kaultai-autonomous-ai-workflow/noembed-response-headers.txt"
+    ],
+    "capture_type": "public-html-metadata",
+    "status": "blocked",
+    "limitation": "The canonical and embed URLs returned HTTP 202 AWS WAF challenge documents; public oEmbed routes returned no shot data, and no public primary image or video was exposed. No challenge bypass was attempted."
+  },
+  {
+    "original_url": "https://dribbble.com/shots/20414611-AI-cyber-security-web-design-landing-page",
+    "resolved_url": "https://dribbble.com/shots/20414611-AI-cyber-security-web-design-landing-page",
+    "entry_path": "taste-board/inbox/batch-001/dribbble/ai-cyber-security-landing-page.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/dribbble/ai-cyber-security-landing-page/page.html",
+      "captures/taste-board/batch-001/dribbble/ai-cyber-security-landing-page/response-headers.txt",
+      "captures/taste-board/batch-001/dribbble/ai-cyber-security-landing-page/embed.html",
+      "captures/taste-board/batch-001/dribbble/ai-cyber-security-landing-page/embed-response-headers.txt",
+      "captures/taste-board/batch-001/dribbble/ai-cyber-security-landing-page/metadata.json",
+      "captures/taste-board/batch-001/dribbble/ai-cyber-security-landing-page/oembed.json",
+      "captures/taste-board/batch-001/dribbble/ai-cyber-security-landing-page/oembed-response-headers.txt",
+      "captures/taste-board/batch-001/dribbble/ai-cyber-security-landing-page/noembed.json",
+      "captures/taste-board/batch-001/dribbble/ai-cyber-security-landing-page/noembed-response-headers.txt"
+    ],
+    "capture_type": "public-html-metadata",
+    "status": "blocked",
+    "limitation": "The canonical and embed URLs returned HTTP 202 AWS WAF challenge documents; public oEmbed routes returned no shot data, and no public primary image or video was exposed. No challenge bypass was attempted."
+  },
+  {
+    "original_url": "https://dribbble.com/shots/24462643-Trading-Platform-Web-Design",
+    "resolved_url": "https://dribbble.com/shots/24462643-Trading-Platform-Web-Design",
+    "entry_path": "taste-board/inbox/batch-001/dribbble/trading-platform-web-design.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/dribbble/trading-platform-web-design/source.html",
+      "captures/taste-board/batch-001/dribbble/trading-platform-web-design/response-headers.txt",
+      "captures/taste-board/batch-001/dribbble/trading-platform-web-design/embed.html",
+      "captures/taste-board/batch-001/dribbble/trading-platform-web-design/embed-headers.txt",
+      "captures/taste-board/batch-001/dribbble/trading-platform-web-design/oembed.json",
+      "captures/taste-board/batch-001/dribbble/trading-platform-web-design/oembed-headers.txt",
+      "captures/taste-board/batch-001/dribbble/trading-platform-web-design/oembed-web.json",
+      "captures/taste-board/batch-001/dribbble/trading-platform-web-design/oembed-web-headers.txt"
+    ],
+    "capture_type": "public-html-metadata",
+    "status": "blocked",
+    "limitation": "The canonical and embed URLs returned HTTP 202 AWS WAF challenge documents; public oEmbed routes returned 404, and no OpenGraph, Twitter, JSON-LD, image, or video evidence was exposed. No challenge bypass was attempted."
+  },
+  {
+    "original_url": "https://dribbble.com/shots/23188412-Creative-Landing-Page-Web-Design-for-Easily-Fintech-Web-App",
+    "resolved_url": "https://dribbble.com/shots/23188412-Creative-Landing-Page-Web-Design-for-Easily-Fintech-Web-App",
+    "entry_path": "taste-board/inbox/batch-001/dribbble/fintech-web-app-landing-page.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/dribbble/fintech-web-app-landing-page/source.html",
+      "captures/taste-board/batch-001/dribbble/fintech-web-app-landing-page/response-headers.txt",
+      "captures/taste-board/batch-001/dribbble/fintech-web-app-landing-page/embed.html",
+      "captures/taste-board/batch-001/dribbble/fintech-web-app-landing-page/embed-headers.txt",
+      "captures/taste-board/batch-001/dribbble/fintech-web-app-landing-page/oembed.json",
+      "captures/taste-board/batch-001/dribbble/fintech-web-app-landing-page/oembed-headers.txt",
+      "captures/taste-board/batch-001/dribbble/fintech-web-app-landing-page/oembed-web.json",
+      "captures/taste-board/batch-001/dribbble/fintech-web-app-landing-page/oembed-web-headers.txt"
+    ],
+    "capture_type": "public-html-metadata",
+    "status": "blocked",
+    "limitation": "The canonical and embed URLs returned HTTP 202 AWS WAF challenge documents; public oEmbed routes returned 404, and no OpenGraph, Twitter, JSON-LD, image, or video evidence was exposed. No challenge bypass was attempted."
+  }
+]

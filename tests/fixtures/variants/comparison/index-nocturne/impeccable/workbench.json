@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "variantId": "comparison/index-nocturne/impeccable",
+  "controls": [
+    {
+      "id": "accent",
+      "label": "Accent",
+      "property": "--fixture-accent",
+      "type": "color",
+      "default": "#9fb5ff"
+    }
+  ]
+}

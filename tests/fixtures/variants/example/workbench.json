@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "variantId": "example",
+  "controls": [
+    {
+      "id": "density",
+      "label": "Density",
+      "property": "--fixture-density",
+      "type": "choice",
+      "options": [
+        { "label": "Compact", "value": "compact" },
+        { "label": "Comfortable", "value": "comfortable" }
+      ],
+      "default": "comfortable"
+    },
+    {
+      "id": "scale",
+      "label": "Scale",
+      "property": "--fixture-scale",
+      "type": "number",
+      "min": 0.5,
+      "max": 2,
+      "step": 0.25,
+      "unit": "",
+      "default": 1
+    },
+    {
+      "id": "accent",
+      "label": "Accent",
+      "property": "--fixture-accent",
+      "type": "color",
+      "default": "#3366ff"
+    },
+    {
+      "id": "animate",
+      "label": "Animate",
+      "property": "--fixture-animate",
+      "type": "boolean",
+      "affectsMotion": true,
+      "default": false
+    }
+  ]
+}

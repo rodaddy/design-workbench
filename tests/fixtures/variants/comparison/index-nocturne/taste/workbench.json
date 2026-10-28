@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "variantId": "comparison/index-nocturne/taste",
+  "controls": [
+    {
+      "id": "accent",
+      "label": "Accent",
+      "property": "--fixture-accent",
+      "type": "color",
+      "default": "#7783a2"
+    }
+  ]
+}

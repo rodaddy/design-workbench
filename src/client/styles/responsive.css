@@ -1,0 +1,125 @@
+/*
+Responsive collapse for the Studio Console. Desktop-first: the console fills
+100dvh with dense panels; below the breakpoints the split panes stack into a
+single scrollable column. No editorial masthead or display heading scale is
+reintroduced here — the compact scale from base.css holds at every width.
+*/
+
+/* Tablet: collapse the two-pane splits into stacked panes. */
+@media (max-width: 64rem) {
+  .library-split,
+  .briefs-body {
+    grid-template-columns: minmax(0, 1fr);
+    grid-auto-rows: minmax(0, auto);
+    overflow-y: auto;
+  }
+
+  /* The persistent detail panel moves below the grid and gets a divider. */
+  .library-split > .detail-panel {
+    border-top: 1px solid var(--line);
+  }
+
+  .library-grid-pane {
+    border-right: 0;
+  }
+
+  .briefs-body > section:first-child {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .studio-workbench {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(14rem, auto);
+    overflow-y: auto;
+  }
+
+  .contact-sheet {
+    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  }
+}
+
+/* Narrow: single-column controls, denser grid, no panel is a masthead. */
+@media (max-width: 40rem) {
+  .app-bar {
+    height: auto;
+    min-height: var(--app-bar-height);
+    flex-wrap: wrap;
+  }
+
+  .app-bar nav {
+    order: 3;
+    flex-basis: 100%;
+    border-top: 1px solid var(--line);
+  }
+
+  .app-bar nav a {
+    flex: 1 0 auto;
+    justify-content: center;
+  }
+
+  .system-status {
+    margin-left: auto;
+  }
+
+  .surface-heading,
+  .studio-heading {
+    flex-wrap: wrap;
+  }
+
+  .filter-rail {
+    gap: 0.4rem 0.5rem;
+  }
+
+  .filter-rail label,
+  .filter-rail label:first-child {
+    flex: 1 1 8rem;
+    min-width: 8rem;
+  }
+
+  .contact-sheet {
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  }
+
+  .studio-project-form,
+  .editor-form,
+  .brief-import {
+    grid-template-columns: 1fr;
+  }
+
+  .editor-form fieldset {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .detail-ledger > div,
+  .studio-project-facts div {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-ledger dd {
+    border-left: 0;
+  }
+}
+
+/* The modal detail dialog spans the viewport on the smallest screens. */
+@media (max-width: 30rem) {
+  .detail-drawer {
+    width: 100vw;
+    border-left: 0;
+  }
+
+  .editor-form fieldset {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "design-workbench",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run scripts/dev.ts",
+    "vite": "vite",
+    "format": "prettier --write \"{src,scripts,tests}/**/*.{ts,tsx,css}\" \"*.{json,ts}\"",
+    "format:check": "prettier --check \"{src,scripts,tests}/**/*.{ts,tsx,css}\" \"*.{json,ts}\"",
+    "lint": "tsc --noEmit -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "bun test",
+    "build": "bun run build:client && bun run build:server",
+    "build:client": "vite build",
+    "build:server": "bun build src/server/index.ts --target=bun --outdir=dist/server",
+    "start": "NODE_ENV=production bun dist/server/index.js",
+    "server": "bun run src/server/index.ts",
+    "import:taste-board": "bun run scripts/import-taste-board.ts",
+    "comparison:new": "bun run scripts/comparison-new.ts",
+    "variant:register": "bun run scripts/variant-register.ts",
+    "test:backend": "bun test tests/backend",
+    "typecheck:backend": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.2",
+    "@types/bun": "^1.3.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "happy-dom": "^20.11.1",
+    "prettier": "^3.9.6",
+    "typescript": "^7.0.2",
+    "vite": "^7.2.4"
+  }
+}

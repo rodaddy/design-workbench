@@ -1,0 +1,71 @@
+[
+  {
+    "original_url": "https://onepagelove.com/mntn?utm_source=Pinterest&utm_medium=organic",
+    "resolved_url": "https://onepagelove.com/mntn?utm_source=Pinterest&utm_medium=organic",
+    "entry_path": "taste-board/inbox/batch-001/galleries/mntn.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/galleries/one-page-love-mntn/page.html",
+      "captures/taste-board/batch-001/galleries/one-page-love-mntn/response-headers.txt",
+      "captures/taste-board/batch-001/galleries/one-page-love-mntn/showcase-desktop.jpg",
+      "captures/taste-board/batch-001/galleries/one-page-love-mntn/showcase-mobile.jpg"
+    ],
+    "capture_type": "static",
+    "status": "partial",
+    "limitation": "In the required design-workbench-b001-galleries session, agent-browser could not write its default socket directory; with approved temp-backed socket/profile state and the dedicated Chrome for Testing executable, Chrome exited before creating DevToolsActivePort. No live page existed to reload or inspect. Saved HTTP 200 HTML and source-owned desktop/mobile screenshots provide static showcase evidence; motion remains unverified."
+  },
+  {
+    "original_url": "https://land-book.com/websites/97765-bynario-a-autonomous-vulnerability-detection-and-remediation",
+    "resolved_url": "https://land-book.com/websites/97765-bynario-a-autonomous-vulnerability-detection-and-remediation",
+    "entry_path": "taste-board/inbox/batch-001/galleries/bynario.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/galleries/land-book-bynario/page.html",
+      "captures/taste-board/batch-001/galleries/land-book-bynario/response-headers.txt"
+    ],
+    "capture_type": "blocked",
+    "status": "blocked",
+    "limitation": "In the required design-workbench-b001-galleries session, agent-browser could not write its default socket directory; with approved temp-backed socket/profile state and the dedicated Chrome for Testing executable, Chrome exited before creating DevToolsActivePort. No live page existed to reload or screenshot. Saved public retrieval returned HTTP 403 and only Land-book's Cloudflare verification shell; no source-owned showcase metadata or media was exposed, and no CAPTCHA bypass was attempted."
+  },
+  {
+    "original_url": "https://land-book.com/websites/98027-graft-is-furniture-and-interior-design-studio-template",
+    "resolved_url": "https://land-book.com/websites/98027-graft-is-furniture-and-interior-design-studio-template",
+    "entry_path": "taste-board/inbox/batch-001/galleries/graft.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/galleries/land-book-graft/page.html",
+      "captures/taste-board/batch-001/galleries/land-book-graft/response-headers.txt"
+    ],
+    "capture_type": "blocked",
+    "status": "blocked",
+    "limitation": "In the required design-workbench-b001-galleries session, agent-browser could not write its default socket directory; with approved temp-backed socket/profile state and the dedicated Chrome for Testing executable, Chrome exited before creating DevToolsActivePort. No live page existed to reload or screenshot. Saved public retrieval returned HTTP 403 and only Land-book's Cloudflare verification shell; no source-owned showcase metadata or media was exposed, and no CAPTCHA bypass was attempted."
+  },
+  {
+    "original_url": "https://craftwork.design/curated/website/unmoth",
+    "resolved_url": "https://craftwork.design/curated/website/unmoth",
+    "entry_path": "taste-board/inbox/batch-001/galleries/unmoth.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/galleries/craftwork-unmoth/page.html",
+      "captures/taste-board/batch-001/galleries/craftwork-unmoth/response-headers.txt",
+      "captures/taste-board/batch-001/galleries/craftwork-unmoth/showcase-preview.png",
+      "captures/taste-board/batch-001/galleries/craftwork-unmoth/motion-frame-07s.jpg",
+      "captures/taste-board/batch-001/galleries/craftwork-unmoth/motion-frame-10s.jpg"
+    ],
+    "capture_type": "mixed",
+    "status": "partial",
+    "limitation": "In the required design-workbench-b001-galleries session, agent-browser could not write its default socket directory; with approved temp-backed socket/profile state and the dedicated Chrome for Testing executable, Chrome exited before creating DevToolsActivePort. No live page existed to reload or inspect. Saved HTTP 200 Craftwork HTML exposed a source-labeled preview and direct 27.9-second MP4; representative extracted frames preserve the scroll sequence."
+  },
+  {
+    "original_url": "https://craftwork.design/curated/website/httpsthecirclecompanyco",
+    "resolved_url": "https://craftwork.design/curated/website/httpsthecirclecompanyco",
+    "entry_path": "taste-board/inbox/batch-001/galleries/the-circle-company.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/galleries/craftwork-the-circle-company/page.html",
+      "captures/taste-board/batch-001/galleries/craftwork-the-circle-company/response-headers.txt",
+      "captures/taste-board/batch-001/galleries/craftwork-the-circle-company/showcase-preview.png",
+      "captures/taste-board/batch-001/galleries/craftwork-the-circle-company/motion-frame-10s.jpg",
+      "captures/taste-board/batch-001/galleries/craftwork-the-circle-company/motion-frame-20s.jpg",
+      "captures/taste-board/batch-001/galleries/craftwork-the-circle-company/motion-frame-29s.jpg"
+    ],
+    "capture_type": "mixed",
+    "status": "partial",
+    "limitation": "In the required design-workbench-b001-galleries session, agent-browser could not write its default socket directory; with approved temp-backed socket/profile state and the dedicated Chrome for Testing executable, Chrome exited before creating DevToolsActivePort. No live page existed to reload or inspect. Saved HTTP 200 Craftwork HTML exposed a source-labeled preview and direct 30.4-second MP4; representative extracted frames preserve the scroll sequence."
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "original_url": "https://pin.it/2tw15yeCN",
+    "resolved_url": "https://www.pinterest.com/pin/844493676784201/sent/?invite_code=6a5ea656d60148189d6578222a7abcc9&sender=786511659832258375&sfo=1",
+    "entry_path": "taste-board/inbox/batch-001/pinterest/pin-1.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/pinterest/pin-1/page.html",
+      "captures/taste-board/batch-001/pinterest/pin-1/response-headers.txt",
+      "captures/taste-board/batch-001/pinterest/pin-1/primary.jpg",
+      "captures/taste-board/batch-001/pinterest/pin-1/source.mp4",
+      "captures/taste-board/batch-001/pinterest/pin-1/frame-02s.jpg",
+      "captures/taste-board/batch-001/pinterest/pin-1/frame-10s.jpg",
+      "captures/taste-board/batch-001/pinterest/pin-1/frame-19s.jpg"
+    ],
+    "capture_type": "motion",
+    "status": "captured",
+    "limitation": "The public MP4 and representative frames ground the visual analysis, but the Pinterest description is generic and the evidence does not establish implementation details or every intermediate transition."
+  },
+  {
+    "original_url": "https://pin.it/42eZC6Vtf",
+    "resolved_url": "https://www.pinterest.com/pin/876302039970772201/sent/?invite_code=9d3935cdc5594114a792cbd5313337f2&sender=786511659832258375&sfo=1",
+    "entry_path": "taste-board/inbox/batch-001/pinterest/pin-2.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/pinterest/pin-2/page.html",
+      "captures/taste-board/batch-001/pinterest/pin-2/response-headers.txt",
+      "captures/taste-board/batch-001/pinterest/pin-2/primary.jpg",
+      "captures/taste-board/batch-001/pinterest/pin-2/source.mp4",
+      "captures/taste-board/batch-001/pinterest/pin-2/frame-02s.jpg",
+      "captures/taste-board/batch-001/pinterest/pin-2/frame-09s.jpg",
+      "captures/taste-board/batch-001/pinterest/pin-2/frame-16s.jpg"
+    ],
+    "capture_type": "motion",
+    "status": "captured",
+    "limitation": "The public MP4 and representative frames ground the visual analysis, but small body copy is partly illegible and the evidence does not prove production interactions beyond the recorded presentation."
+  },
+  {
+    "original_url": "https://pin.it/2Z5IfMFh7",
+    "resolved_url": "https://www.pinterest.com/pin/761249143247734061/",
+    "entry_path": "taste-board/inbox/batch-001/pinterest/pin-3.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/pinterest/pin-3-public-metadata.html",
+      "captures/taste-board/batch-001/pinterest/pin-3-response-headers.txt",
+      "captures/taste-board/batch-001/pinterest/pin-3-frame-00s.jpg",
+      "captures/taste-board/batch-001/pinterest/pin-3-frame-02s.jpg",
+      "captures/taste-board/batch-001/pinterest/pin-3-frame-04s.jpg",
+      "captures/taste-board/batch-001/pinterest/pin-3-frame-06s.jpg",
+      "captures/taste-board/batch-001/pinterest/pin-3-frame-08s.jpg"
+    ],
+    "capture_type": "motion",
+    "status": "captured",
+    "limitation": "The five 480 by 480 frames cover the public video at two-second intervals; exact easing, hover states, and small copy remain unavailable."
+  },
+  {
+    "original_url": "https://pin.it/4xdMtb20R",
+    "resolved_url": "https://www.pinterest.com/pin/945333778019510052/",
+    "entry_path": "taste-board/inbox/batch-001/pinterest/pin-4.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/pinterest/pin-4-page.html",
+      "captures/taste-board/batch-001/pinterest/pin-4-response-headers.txt",
+      "captures/taste-board/batch-001/pinterest/pin-4-primary.jpg",
+      "captures/taste-board/batch-001/pinterest/pin-4-video.mp4",
+      "captures/taste-board/batch-001/pinterest/pin-4-frame-05s.jpg"
+    ],
+    "capture_type": "motion",
+    "status": "captured",
+    "limitation": "The public video grounds the hero and its animation, but deeper page states, responsive behavior, and functional interactions are not shown."
+  },
+  {
+    "original_url": "https://pin.it/6jBreaUTZ",
+    "resolved_url": "https://www.pinterest.com/pin/315463148920617187/sent/?invite_code=e27acd5cd2ac45cb901d8e8b0dc7aced&sender=786511659832258375&sfo=1",
+    "entry_path": "taste-board/inbox/batch-001/pinterest/pin-5.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/pinterest/pin-5/page.html",
+      "captures/taste-board/batch-001/pinterest/pin-5/response-headers.txt",
+      "captures/taste-board/batch-001/pinterest/pin-5/metadata.json",
+      "captures/taste-board/batch-001/pinterest/pin-5/primary.jpg",
+      "captures/taste-board/batch-001/pinterest/pin-5/image-response-headers.txt"
+    ],
+    "capture_type": "image",
+    "status": "captured",
+    "limitation": "The evidence is a static portfolio comp; live responsive behavior, hover states, transitions, and the underlying Behance project are not verified."
+  },
+  {
+    "original_url": "https://pin.it/2CMht8Gts",
+    "resolved_url": "https://www.pinterest.com/pin/1618549864576586/sent/?invite_code=9396468d70e54a53be9fdd0eccb85318&sender=786511659832258375&sfo=1",
+    "entry_path": "taste-board/inbox/batch-001/pinterest/pin-6.md",
+    "evidence_paths": [
+      "captures/taste-board/batch-001/pinterest/pin-6/page.html",
+      "captures/taste-board/batch-001/pinterest/pin-6/response-headers.txt",
+      "captures/taste-board/batch-001/pinterest/pin-6/metadata.json",
+      "captures/taste-board/batch-001/pinterest/pin-6/primary.jpg",
+      "captures/taste-board/batch-001/pinterest/pin-6/image-response-headers.txt"
+    ],
+    "capture_type": "image",
+    "status": "captured",
+    "limitation": "The evidence is a stacked static presentation of theme concepts; carousel behavior, responsive layout, typeface identity, transitions, and linked product details are not verified."
+  }
+]
