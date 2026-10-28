@@ -2,7 +2,7 @@
 
 Sources: the private development repository's git history (19 commits,
 2026-07-24 to 2026-10-27), its pull requests, the four SQL migrations, the
-docs in `docs/`, and the 47 test files in this repository. The recorded
+docs in `docs/`, and the 34 test files in this repository. The recorded
 history starts part-way through the build: the first commit (2026-07-24) is
 a fix to code that already existed, and most of the source tree was only
 committed on 2026-09-11, when 251 uncommitted files were landed in one
@@ -65,7 +65,7 @@ generator output failing the app's contracts.
 
 ## Testing
 
-47 test files under `tests/` (backend, client and shared), run with
+34 test files under `tests/` (backend, client, security and shared), run with
 `bun test`, Testing Library and happy-dom: 239 tests, of which 230 pass on
 a clean checkout, 1 is a todo, and 8 generation and refinement tests need
 the third-party engine skills that are not shipped here. Commit messages

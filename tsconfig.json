@@ -10,7 +10,8 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
-    "types": ["bun"]
+    "types": ["bun"],
+    "noUncheckedSideEffectImports": false
   },
   "include": [
     "src/**/*.ts",
